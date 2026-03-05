@@ -11,5 +11,11 @@ namespace CW1.Drivers.Buses.SPI
             if (null == instance) { instance = new MockSPI(); }
             return instance;
         }
+
+        public override bool WriteByte(byte b)
+        {
+            Console.WriteLine($"{this} SPI cannot handle any errors Ahhhh poor register :<");
+            return true;
+        }
     }
 }
