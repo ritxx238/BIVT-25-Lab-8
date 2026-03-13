@@ -213,12 +213,12 @@ namespace Lab8.Blue
                 {
                     return 0;
                 }
-                int sumSportsman = 0;
+               int sumSportsman = 0;
                 for (int i = 0; i < Sportsmen.Length; i++)
                 {
                     sumSportsman += Sportsmen[i].Place;
                 }
-                int sr = sumSportsman / Sportsmen.Length;
+                double sr = sumSportsman / Sportsmen.Length;
                 return (100 / sr);
             }
         }
@@ -233,7 +233,7 @@ namespace Lab8.Blue
                     return 0;
                 }
                 int sumSportsman = 0;
-                int pr = 1;
+                double pr = 1;
                 for (int i = 0; i < Sportsmen.Length; i++)
                 {
                     sumSportsman += Sportsmen[i].Place;
