@@ -164,7 +164,10 @@ namespace Lab8.Blue
                 _totalTime = 0;
             }
 
-            public HockeyPlayer(string name, string surname) : base(name, surname) { _players++; }
+            public HockeyPlayer(string name, string surname) : base(name, surname) 
+            { 
+                _players++; 
+            }
 
             public override void PlayMatch(int time)
             {
