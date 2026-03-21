@@ -1,3 +1,5 @@
+using System.Diagnostics.Contracts;
+
 namespace Lab8.Green
 {
     public class Task3
@@ -7,8 +9,9 @@ namespace Lab8.Green
             private string _name;
             private string _surname;
             private int[] _marks;
-            private static int _id;
+            private int _id;
             private bool _expalled = false;
+            static int counter = 0;
 
             public string Name => _name;
             public int ID => _id;
@@ -42,7 +45,7 @@ namespace Lab8.Green
 
             static Student ()
             {
-                _id = 1;
+                counter = 1;
             }
 
 
@@ -51,6 +54,8 @@ namespace Lab8.Green
                 _name = name;
                 _surname = surname;
                 _marks = new int[3];
+                _id = counter;
+                counter++;
             }
 
             public void Restore()
@@ -120,7 +125,7 @@ namespace Lab8.Green
                 {
                     for (int j = 0; j < n - i - 1; j++)
                     {
-                        if (students[j].ID < students[j + 1].ID)
+                        if (students[j].ID > students[j + 1].ID)
                         {
                             (students[j], students[j + 1]) = (students[j + 1], students[j]);
                         }
@@ -129,7 +134,6 @@ namespace Lab8.Green
             }
             public static Student[] Expel(ref Student[] students)
             {
-                
                 int c = 0;
 
                 for (int i = 0; i < students.Length; i++)
@@ -152,7 +156,7 @@ namespace Lab8.Green
                 {
                     if (students[i].IsExpelled == true)
                     {
-                        expelled[c]= students[i];
+                        expelled[k]= students[i];
                         k++;
                     }
                     else
@@ -169,9 +173,24 @@ namespace Lab8.Green
 
             public static void Restore(ref Student[] students, Student restored)
             {
+                bool flag = false;
+                for (int i = 0; i < students.Length; i++)
+                {
+                    if (students[i] == restored)
+                    {
+                        flag = true;
+                        break;
+                    }
+                }
 
+                if (!flag)
+                {
+                    Array.Resize(ref students, students.Length + 1);
+                    students[students.Length - 1] = restored;
+                }
+                
+                Sort(students);
             }
-
         }
 
     }
