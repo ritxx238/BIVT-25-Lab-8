@@ -1,5 +1,3 @@
-using System.Diagnostics.Contracts;
-
 namespace Lab8.Green
 {
     public class Task3
