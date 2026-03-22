@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-namespace Lab7.Purple
+namespace Lab8.Purple
 {
     public class Task3
     {
