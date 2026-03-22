@@ -1,10 +1,70 @@
 ﻿using System.Runtime;
 using System.Xml.Linq;
 
-namespace Lab7.Purple
+namespace Lab8.Purple
 {
     public class Task5
     {
+      public class Report
+      {
+	private Research[] _researches;
+	private static int _researchCount;
+
+	public Research[] Researches => _researches;
+
+	static Report()
+	{
+	  _researchCount = 1;
+	}
+
+	public Report()
+	{
+	  _researches = new Research[0];
+	}
+
+	public Research MakeResearch()
+	{
+	  Research r = new Research($"No_{_researchCount++}_{DateTime.Today.Month}/{DateTime.Today.Year % 100}");
+	  _researches = _researches.Append(r).ToArray();
+	  return r;
+	}
+
+	public (string, double)[] GetGeneralReport(int question)
+	{
+	  int total = 0;
+	  var dict = new Dictionary<string, int>();
+
+	  for (int i = 0; i < _researches.Length; i++)
+	  {
+	    Response[] responses = _researches[i].Responses;
+
+	    for (int j = 0; j < responses.Length; j++)
+	    {
+	      string response = "";
+
+	      switch (question){
+		case 1:
+		  response = responses[j].Animal;
+		  break;
+		case 2:
+		  response = responses[j].CharacterTrait;
+		  break;
+		case 3:
+		  response = responses[j].Concept;
+		  break;
+	      }
+
+	      if (response == null) continue; 
+
+	      total++;
+	      dict[response] = dict.ContainsKey(response) ? dict[response] + 1 : 1;
+	    }
+	  }
+
+	  return dict.Select(x => (x.Key, x.Value * 100.0 / total)).ToArray();
+	}
+      }
+
       public struct Response
       {
 	private string _animal;
@@ -33,9 +93,25 @@ namespace Lab7.Purple
 	  int s = 0;
 	  for (int i = 0; i < responses.Length; i++)
 	  {
-	    if (compare(responses[i], this))
-	    {
-	      s+=1;
+	    switch (questionNumber){
+	      case 1:
+		if (responses[i].Animal == this.Animal)
+		{
+		  s+=1;
+		}
+		break;
+	      case 2:
+		if (responses[i].CharacterTrait == this.CharacterTrait)
+		{
+		  s+=1;
+		}
+		break;
+	      case 3:
+		if (responses[i].Concept == this.Concept)
+		{
+		  s+=1;
+		}
+		break;
 	    }
 	  }
 	  return s;
@@ -57,6 +133,7 @@ namespace Lab7.Purple
 
 	public Research(string name)
 	{
+	  _name = name;
 	  _responses = new Response[0];
 	}
 
