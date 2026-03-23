@@ -1,0 +1,120 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyConsole
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Transport trans = new Transport("tttt", 14);
+            LightCar lCar = new LightCar("Light Car", 200, "Blue");
+
+            //                                                                                              ///
+            //   //////////  ////////      ///////////     /////////   ////////    //           //    //           //
+            //   //          //            //       //     //     //   //          //         ////    //         ////
+            //   //          //            //       //     //     //   //          //        // //    //        // //
+            //   //          //            //       //     /////////   //          //      //   //    //      //   //
+            //   //          ///////       //       //     //          //          //    //     //    //    //     //
+            //   //          //            //       //     //          //          //  //       //    //  //       //
+            //   //          //            //       //     //          //          ////         //    ////         //
+            //   //          ////////      ///////////     //          //          //           //    //           //
+
+
+            //                                                 //
+            //                                                 //
+            //                                             ////////// 
+            //                                                 //
+            //                                                 //
+
+
+            //  /////////       ////       ////    //      //             ////   //      //        /////////
+            //          //      //  //   //  //    //      //           //  //   //      //      //     // //
+            //        /////     //    //     //    //    ////         //    //   //    ////      //   //   //
+            //           //     //           //    //  //  //       //      //   //  //  //        ///     //
+            //          //      //           //    ////    //     //        //   ////    //       //       //
+            //  /////////       //           //    //      //   //          //   //      //     //         //
+
+
+            //                                             ///////////
+            //                                 
+            //                                 
+            //                                 
+            //                                             //////////
+
+
+            //                                                 //  //
+            //                                               //  //  //
+            //                                                 //  //
+            //                                                   //
+
+            Transport trans2 = new LightCar("ligt car", 100, "RED");
+            Transport[] transes = new Transport[] { trans, lCar, trans2 };
+            for (int i = 0; i < transes.Length; i++)
+            {
+                if (transes[i] is LightCar)
+                {
+                    LightCar lc = transes[i] as LightCar;
+                }
+            }
+
+        }
+    }
+
+    public class Transport
+    {
+        protected string _type;
+        protected double _maxSpeed;
+
+        public Transport (string type, double maxSpeed)
+        {
+            _type = type;   
+            _maxSpeed = maxSpeed;
+        }
+
+        public virtual void StartEngine()
+        {
+            Console.WriteLine("Engine started");
+        }
+
+        public void Print()
+        {
+            Console.WriteLine($"Car: {_type} {_maxSpeed}");
+        }
+    }
+
+    public class LightCar : Transport
+    {
+        private string _color;
+        private bool _crouiseControl;
+
+        public LightCar(string type, double maxSpeed, string color) : base(type, maxSpeed)
+        {
+            _maxSpeed *= 1.2;
+            _color = color;
+        }
+
+        public LightCar(string type, double maxSpeed, string color, bool crouseControl) 
+            : this(type, maxSpeed, color)
+        {
+            _crouiseControl = crouseControl;
+        }
+
+        public override void StartEngine() // Переопределение
+        {
+            Console.WriteLine("cOol Chinees eengine started");
+        }
+
+        public new void Print() // сокрытие
+        {
+            Console.WriteLine($"Car: {_type} {_maxSpeed} {_color}"); 
+        }
+    }
+}
+
+
+
