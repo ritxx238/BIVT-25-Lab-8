@@ -77,31 +77,6 @@ namespace Lab8.Purple
                     { Array.Resize(ref women, women.Length + 1); women[^1] = _sportsman[i]; }
                 }
             }
-            //public void Shuffle()
-            //{
-            //    Sportsman[] men; Sportsman[] women;
-            //    Sort();
-            //    Split(out men, out women);
-            //    int m = men.Length, w = women.Length;
-            //    Sportsman[] mas = new Sportsman[m + w]; int k = 0;
-            //    if (women[0].Time < men[0].Time)
-            //    {
-            //        for (int i = 0; i < Math.Max(m, w); i++)
-            //        {
-            //            if (i < m) mas[k++] = men[i];
-            //            if (i < w) mas[k++] = women[i];
-            //        }
-            //    }
-            //    else
-            //    {
-            //        for (int i = 0; i < Math.Max(m, w); i++)
-            //        {
-            //            if (i < w) mas[k++] = women[i];
-            //            if (i < m) mas[k++] = men[i];
-            //        }
-            //    }
-            //    _sportsman = mas;
-            //}
             public void Shuffle()
             {
                 
