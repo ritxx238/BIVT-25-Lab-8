@@ -7,7 +7,9 @@
             readonly string name = name;
 
             public string Name => name;
-            public int Votes { get; protected set; }
+            public int Votes { get; private set; }
+
+            protected void bruh_ahhh_set_this_freaking_votes_btw(int v) { this.Votes = v; }
 
             virtual public int CountVotes(Response[] responses)
             {
@@ -40,12 +42,12 @@
 
             override public int CountVotes(Response[] responses)
             {
-                this.Votes = responses.Count(Same);
+                this.bruh_ahhh_set_this_freaking_votes_btw(responses.Count(Same));
 
                 for (int i = 0; i < responses.Length; i += 1)
                 {
                     if (null == responses[i]) { continue; }
-                    if (Same((HumanResponse)responses[i])) { ((HumanResponse)responses[i]).Votes = this.Votes; }
+                    if (Same((HumanResponse)responses[i])) { ((HumanResponse)responses[i]).bruh_ahhh_set_this_freaking_votes_btw(this.Votes); }
                 }
 
                 return this.Votes;
