@@ -2,11 +2,6 @@ namespace Lab8.Purple
 {
     public class Task2
     {
-    }
-}namespace Lab8.Purple
-{
-    public class Task2
-    {
         public struct Participant
         {
             private string _name;
