@@ -43,6 +43,7 @@ namespace Lab8.Green
 
                     int validMarksCount = 0;
                     double sum = 0;
+
                     for (int i = 0; i < _marks.Length; i++)
                     {
                         if (_marks[i] > 0)
@@ -181,7 +182,7 @@ namespace Lab8.Green
 
                 for (int i = 0; i < students.Length; i++)
                 {
-                    if (students[i] != null && students[i].ID == restored.ID) return; 
+                    if (students[i] != null && students[i].ID == restored.ID) return;
                 }
 
                 restored.Restore();
