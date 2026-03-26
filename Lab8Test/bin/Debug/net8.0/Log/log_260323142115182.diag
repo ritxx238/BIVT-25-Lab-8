@@ -1,0 +1,30 @@
+2026-03-23T14:21:15.1892371+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.6.2+88f8ce447cd12b629fcfe5e61d80dcc0c8cab8ec
+2026-03-23T14:21:15.2142877+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-03-23T14:21:15.2173150+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-03-23T14:21:15.2173355+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 14:21:15.155
+2026-03-23T14:21:15.2197674+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 6568
+2026-03-23T14:21:15.2199676+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.21
+2026-03-23T14:21:15.2200760+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.21\System.Private.CoreLib.dll
+2026-03-23T14:21:15.2201169+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-03-23T14:21:15.2201205+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Lab8Test.dll
+2026-03-23T14:21:15.2204587+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Log --client-port 52172'
+2026-03-23T14:21:15.2218607+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-03-23T14:21:15.2659276+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-03-23T14:21:15.2889081+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2026-03-23T14:21:15.5709348+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.8.2' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2026-03-23T14:21:15.5871637+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter WARNING Runsettings datacollectors are not supported by Microsoft.Testing.Platform and will be ignored
+2026-03-23T14:21:15.6238713+00:00 mstest-trace INFORMATION MSTestExecutor.RunTests: Running tests from sources.
+2026-03-23T14:21:15.6308319+00:00 mstest-trace INFORMATION CollectSourceInformation value found : True 
+2026-03-23T14:21:15.6797996+00:00 mstest-trace INFORMATION MSTestDiscoverer: Found 9 tests from source C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Lab8Test.dll
+2026-03-23T14:21:15.7360926+00:00 mstest-trace INFORMATION Created unit-test runner C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Lab8Test.dll
+2026-03-23T14:21:15.7427562+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter INFORMATION Test Parallelization enabled for C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Lab8Test.dll (Workers: 1, Scope: MethodLevel)
+2026-03-23T14:21:15.7591485+00:00 mstest-trace INFORMATION Executing test Test_04_CreateGroups
+2026-03-23T14:21:15.8333299+00:00 mstest-trace INFORMATION Executed test Test_04_CreateGroups
+2026-03-23T14:21:15.8359520+00:00 mstest-trace INFORMATION MSTestExecutor:Test Lab8Test.Blue.Task4.Test_04_CreateGroups failed. ErrorMessage:Test method Lab8Test.Blue.Task4.Test_04_CreateGroups threw exception: 
+System.InvalidCastException: Unable to cast object of type 'Team[]' to type 'ManTeam[]'., ErrorStackTrace:    at Lab8.Blue.Task4.Group.get_ManTeams() in C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\Blue\Task4.cs:line 57
+   at Lab8Test.Blue.Task4.CheckGroups(Boolean filled, Int32 expectedManCount, Int32 expectedWomanCount, Boolean sorted, Int32 groupIndex) in C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\Blue\Task4.cs:line 302
+   at Lab8Test.Blue.Task4.Test_04_CreateGroups() in C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\Blue\Task4.cs:line 127
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+.
+2026-03-23T14:21:15.8390194+00:00 mstest-trace INFORMATION Executed tests belonging to source C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Lab8Test.dll

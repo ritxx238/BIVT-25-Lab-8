@@ -1,0 +1,18 @@
+2026-03-24T10:51:50.4238857+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.6.2+88f8ce447cd12b629fcfe5e61d80dcc0c8cab8ec
+2026-03-24T10:51:50.4700149+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-03-24T10:51:50.4740628+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-03-24T10:51:50.4740799+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 10:51:50.343
+2026-03-24T10:51:50.4767531+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 3768
+2026-03-24T10:51:50.4769371+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.21
+2026-03-24T10:51:50.4770554+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.21\System.Private.CoreLib.dll
+2026-03-24T10:51:50.4770863+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-03-24T10:51:50.4770907+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Lab8Test.dll
+2026-03-24T10:51:50.4775489+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Log --client-port 63793'
+2026-03-24T10:51:50.4800055+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-03-24T10:51:50.6234753+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-03-24T10:51:50.6637842+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2026-03-24T10:51:51.1767830+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.8.2' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2026-03-24T10:51:51.2171397+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter WARNING Runsettings datacollectors are not supported by Microsoft.Testing.Platform and will be ignored
+2026-03-24T10:51:51.2248713+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter WARNING Runsettings attribute 'MaxCpuCount' is not supported by Microsoft.Testing.Platform and will be ignored
+2026-03-24T10:51:51.2500347+00:00 mstest-trace INFORMATION CollectSourceInformation value found : True 
+2026-03-24T10:51:51.3589923+00:00 mstest-trace INFORMATION MSTestDiscoverer: Found 9 tests from source C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8Test\bin\Debug\net8.0\Lab8Test.dll

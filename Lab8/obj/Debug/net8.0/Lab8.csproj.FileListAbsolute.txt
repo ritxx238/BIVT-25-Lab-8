@@ -1,0 +1,15 @@
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.AssemblyInfoInputs.cache
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.AssemblyInfo.cs
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.csproj.CoreCompileInputs.cache
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.sourcelink.json
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\bin\Debug\net8.0\Lab8.exe
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\bin\Debug\net8.0\Lab8.deps.json
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\bin\Debug\net8.0\Lab8.runtimeconfig.json
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\bin\Debug\net8.0\Lab8.dll
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\bin\Debug\net8.0\Lab8.pdb
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.dll
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\refint\Lab8.dll
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.pdb
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\Lab8.genruntimeconfig.cache
+C:\Users\retin\OneDrive\Рабочий стол\Progects\labs\BIVT-25-Lab-8\Lab8\obj\Debug\net8.0\ref\Lab8.dll
